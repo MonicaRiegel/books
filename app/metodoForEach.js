@@ -1,6 +1,8 @@
 const elementoParaInserirLivros = document.getElementById('livros')
+const elenemtoComValorTotalDeLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis')
 
 function exibirOsLivrosNaTela(listaDeLivros) {
+  elenemtoComValorTotalDeLivrosDisponiveis.innerHTML = ''
     elementoParaInserirLivros.innerHTML = ''
     listaDeLivros.forEach(livro => {
         //let disponibilidade = verificarDisponibilidadeDoLivro(livro)
